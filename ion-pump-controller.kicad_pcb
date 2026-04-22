@@ -34,6 +34,45 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
@@ -7117,7 +7156,7 @@
 		(descr "SMD rectangular pad as test Point, square 4.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J7"
-			(at 0 -2.898 0)
+			(at 3.9 0.4475 0)
 			(layer "F.SilkS")
 			(uuid "36f68387-2bdf-4f18-88ee-a1d99036fa4d")
 			(effects
@@ -8690,11 +8729,11 @@
 	(footprint "TestPoint:TestPoint_Pad_4.0x4.0mm"
 		(layer "F.Cu")
 		(uuid "a2f0ffe7-a180-4464-98ec-543f14bdf1ba")
-		(at 273 137)
+		(at 273 138)
 		(descr "SMD rectangular pad as test Point, square 4.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J8"
-			(at 0 -2.898 0)
+			(at 5 0 0)
 			(layer "F.SilkS")
 			(uuid "3d0a0973-feb9-4e79-ada0-6e2c49033599")
 			(effects
@@ -15844,12 +15883,36 @@
 		(uuid "257014c8-65d3-494d-a50e-792509507736")
 	)
 	(segment
-		(start 116 16)
-		(end 103.46 28.54)
+		(start 161 80)
+		(end 151 90)
 		(width 1.5)
 		(layer "F.Cu")
 		(net 38)
-		(uuid "56249495-e5ed-4eba-bb67-eb9777742fc5")
+		(uuid "2de785b4-f05e-409f-993d-5b970c8da71c")
+	)
+	(segment
+		(start 171 58)
+		(end 161 68)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 38)
+		(uuid "3cd617bf-dc84-4967-95bf-c909a4078399")
+	)
+	(segment
+		(start 105.150447 28.0615)
+		(end 103.46 29.751947)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 38)
+		(uuid "4c7d04c4-af25-41ae-ab53-5abba606986a")
+	)
+	(segment
+		(start 133 78)
+		(end 133 47)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 38)
+		(uuid "50a04da9-3712-4fd8-84c6-3a31be4be7a0")
 	)
 	(segment
 		(start 64 30)
@@ -15876,6 +15939,22 @@
 		(uuid "87ab6657-3e39-48a2-bb18-54aec8a97567")
 	)
 	(segment
+		(start 114.0615 28.0615)
+		(end 105.150447 28.0615)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 38)
+		(uuid "96e5bf6b-a5ae-421f-9832-6f436d0aa2e1")
+	)
+	(segment
+		(start 103.46 29.751947)
+		(end 103.46 30.1125)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 38)
+		(uuid "98526e94-5f99-447c-9ae0-fadeed712b48")
+	)
+	(segment
 		(start 55 30)
 		(end 64 30)
 		(width 1)
@@ -15884,12 +15963,12 @@
 		(uuid "9dc12151-74e0-4d0c-b750-0ee1e5988e46")
 	)
 	(segment
-		(start 103.46 28.54)
-		(end 103.46 30.1125)
+		(start 161 68)
+		(end 161 80)
 		(width 1.5)
 		(layer "F.Cu")
 		(net 38)
-		(uuid "a2bc9847-1c4b-4936-94f8-6589f1b03c91")
+		(uuid "a32b67cc-34a4-427c-a465-c1c93a72a034")
 	)
 	(segment
 		(start 195.25 54.25)
@@ -15900,12 +15979,20 @@
 		(uuid "a979b4a9-e3ee-44f0-b5df-e6eb3f0f19d0")
 	)
 	(segment
-		(start 171 58)
-		(end 129 16)
+		(start 133 47)
+		(end 114.0615 28.0615)
 		(width 1.5)
 		(layer "F.Cu")
 		(net 38)
-		(uuid "b586765b-5817-4d3a-be44-c7b0f1bdc4b5")
+		(uuid "b334b70b-ca42-4a16-ba9d-629a905b2afb")
+	)
+	(segment
+		(start 145 90)
+		(end 133 78)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 38)
+		(uuid "bcc25f24-53f0-4ce3-b448-5923910c2325")
 	)
 	(segment
 		(start 194.3 53.3)
@@ -15916,20 +16003,20 @@
 		(uuid "c06d80cf-0c8c-4990-bb21-020a6e754554")
 	)
 	(segment
-		(start 129 16)
-		(end 116 16)
-		(width 1.5)
-		(layer "F.Cu")
-		(net 38)
-		(uuid "c1ef765a-4590-4ac9-bb55-828c56c929a8")
-	)
-	(segment
 		(start 67 33)
 		(end 67 49.92)
 		(width 1)
 		(layer "F.Cu")
 		(net 38)
 		(uuid "e33477a1-ad76-4f30-a20f-dbce1b76b9ed")
+	)
+	(segment
+		(start 151 90)
+		(end 145 90)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 38)
+		(uuid "e7819fcd-689c-4851-b2e6-a66b6c98d107")
 	)
 	(segment
 		(start 90 147)
