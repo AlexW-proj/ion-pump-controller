@@ -4906,6 +4906,12 @@
 		(uuid "084b4811-c794-4b01-a153-055178d03a46")
 	)
 	(junction
+		(at 182.88 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d408bcc-d797-4a65-a3ff-57d41fc21470")
+	)
+	(junction
 		(at 59.69 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6239,7 +6245,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 151.13) (xy 182.88 153.67)
+			(xy 182.88 151.13) (xy 182.88 158.75)
 		)
 		(stroke
 			(width 0)
@@ -6506,6 +6512,16 @@
 			(type default)
 		)
 		(uuid "f1dad116-fc07-45b4-b9a6-df8b3fb3d5d6")
+	)
+	(wire
+		(pts
+			(xy 182.88 158.75) (xy 182.88 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f46a4383-0569-4d0d-a629-eea785f060c4")
 	)
 	(wire
 		(pts
@@ -9790,7 +9806,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 182.88 153.67 0)
+		(at 182.88 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9799,7 +9815,7 @@
 		(fields_autoplaced yes)
 		(uuid "7398cc93-fdf7-4dd1-91e4-fc9eb0899255")
 		(property "Reference" "#PWR025"
-			(at 182.88 160.02 0)
+			(at 182.88 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9808,7 +9824,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 182.88 158.75 0)
+			(at 182.88 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9816,7 +9832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 153.67 0)
+			(at 182.88 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9825,7 +9841,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 182.88 153.67 0)
+			(at 182.88 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9834,7 +9850,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 182.88 153.67 0)
+			(at 182.88 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10962,6 +10978,71 @@
 			(project ""
 				(path "/b810c8e2-bee1-4756-9807-978788334584"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 187.96 158.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9cf2a025-379e-400e-875a-cbb23b6988f3")
+		(property "Reference" "J9"
+			(at 187.325 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "earth terminal"
+			(at 187.325 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+			(at 187.96 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 187.96 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0de3044d-1e82-48dd-a994-2e7125e4c5d4")
+		)
+		(instances
+			(project "ion-pump-controller"
+				(path "/b810c8e2-bee1-4756-9807-978788334584"
+					(reference "J9")
 					(unit 1)
 				)
 			)
